@@ -16,7 +16,7 @@ import { insertAnalytics } from '@/lib/analytics';
 import { createShareableWrap, updateSharedWrapWithPersona } from '@/lib/sharing';
 import { trackEvent } from '@/lib/mixpanel';
 
-const DEFAULT_PROVIDER: AiProvider = 'claude';
+const DEFAULT_PROVIDER: AiProvider = 'chatgpt';
 
 type SessionInfo = {
   date: string;
@@ -333,7 +333,7 @@ export default function Home() {
 
         {/* Large decorative typography in background */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[25rem] font-display font-black text-white/[0.02] select-none whitespace-nowrap">
-          2024
+          2025
         </div>
       </div>
 
@@ -346,7 +346,7 @@ export default function Home() {
           className="mb-8 flex items-center justify-between"
         >
           <div className="inline-flex rounded-full bg-[#f8f5f2]/10 p-1 border border-[#f8f5f2]/20 relative">
-            {(['claude', 'chatgpt'] as AiProvider[]).map(option => {
+            {(['chatgpt', 'claude'] as AiProvider[]).map(option => {
               const isActive = option === selectedProvider;
               return (
                 <button
@@ -492,7 +492,7 @@ export default function Home() {
                     scale: isDragging ? 1.05 : 1,
                     borderColor: isDragging ? '#ff006e' : 'rgba(248, 245, 242, 0.3)',
                   }}
-                  className="relative border-4 border-dashed rounded-2xl p-12 mx-auto max-w-xl transition-all duration-300 cursor-pointer backdrop-blur-sm bg-[#f8f5f2]/5 hover:bg-[#f8f5f2]/10 mb-10"
+                  className="relative border-4 border-dashed rounded-2xl p-12 mx-auto max-w-xl transition-all duration-300 cursor-pointer backdrop-blur-sm bg-[#f8f5f2]/5 hover:bg-[#f8f5f2]/10 mb-2"
                 >
                   <input
                     type="file"
@@ -522,6 +522,13 @@ export default function Home() {
                     or click to browse
                   </p>
                 </motion.div>
+
+                <p className="text-xs text-[#f8f5f2]/40 text-center mt-1 mb-4">
+                  By uploading, you agree to our{' '}
+                  <a href="/privacy" className="underline hover:text-[#f8f5f2]/60 transition-colors">
+                    Privacy Policy
+                  </a>
+                </p>
 
                 {needsProviderChoice && (
                   <div className="mb-8 rounded-2xl border border-yellow-500/40 bg-yellow-500/10 px-6 py-5 text-left text-yellow-100">
@@ -584,7 +591,7 @@ export default function Home() {
                   </p>
                   <p className="flex gap-4 items-start">
                     <span className="font-display text-3xl font-bold text-[#ff006e]">3</span>
-                    <span className="text-[#f8f5f2]/80 text-lg pt-1">Download the ZIP and drop it above</span>
+                    <span className="text-[#f8f5f2]/80 text-lg pt-1">Download the file and drop it above</span>
                   </p>
                 </div>
 

@@ -6,12 +6,12 @@ Generate a "Spotify Wrapped"-style summary of your Claude and ChatGPT conversati
 
 ## Privacy First
 
-**Your data never leaves your browser.**
+**Your full conversations stay on your device.**
 
 - Your ZIP file is parsed entirely client-side using JavaScript
 - Conversation content is never uploaded to any server
 - The only data stored (for sharing) is the aggregated stats you see on the cards
-- Persona generation sends only session titles and brief context to the Claude API
+- Persona generation sends session titles and the first 3 messages from a small sample of conversations to the Claude API
 
 This repo is open-source so you can verify these claims yourself. Key files to review:
 - `lib/parseClaudeExport.ts` - Claude export parsing (runs in browser)
@@ -105,4 +105,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built by [Dysun Inc](https://dysun.co)
+Built by [Dysun Inc](https://dysunlabs.com)
