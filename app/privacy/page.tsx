@@ -1,10 +1,12 @@
+import Link from 'next/link';
+
 export default function PrivacyPolicy() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-neutral-950 to-black text-white py-16 px-6">
       <div className="max-w-2xl mx-auto">
-        <a href="/" className="text-neutral-400 hover:text-white transition-colors text-sm">
+        <Link href="/" className="text-neutral-400 hover:text-white transition-colors text-sm">
           ← Back to AI Wrapped
-        </a>
+        </Link>
 
         <h1 className="font-display text-4xl font-bold mt-8 mb-2">Privacy Policy</h1>
         <p className="text-neutral-500 mb-12">Effective Date: December 5, 2025</p>
