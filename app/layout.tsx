@@ -27,7 +27,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AI Wrapped - Your Year with Claude & ChatGPT",
+  title: "AI Wrapped - Your AI Journey, Wrapped",
   description: "See your AI conversation stats visualized. Discover your total chats, longest sessions, busiest days, and personality insights from your Claude or ChatGPT history.",
   keywords: ["AI Wrapped", "Claude Wrapped", "ChatGPT Wrapped", "AI stats", "conversation analytics", "Claude statistics", "ChatGPT statistics", "year in review"],
   authors: [{ name: "Akshay Chintalapati", url: "https://twitter.com/akshayvkt" }],
@@ -37,20 +37,20 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://aiwrapped.co",
     siteName: "AI Wrapped",
-    title: "AI Wrapped - Your Year with Claude & ChatGPT",
+    title: "AI Wrapped - Your AI Journey, Wrapped",
     description: "See your AI conversation stats visualized. Discover your total chats, longest sessions, busiest days, and personality insights.",
     images: [
       {
         url: "https://aiwrapped.co/og-image.png",
         width: 1200,
         height: 630,
-        alt: "AI Wrapped - Your year in AI conversations",
+        alt: "AI Wrapped - Your AI journey, wrapped",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Wrapped - Your Year with Claude & ChatGPT",
+    title: "AI Wrapped - Your AI Journey, Wrapped",
     description: "See your AI conversation stats visualized. Total chats, longest sessions, busiest days, and more.",
     creator: "@akshayvkt",
     images: ["https://aiwrapped.co/og-image.png"],
