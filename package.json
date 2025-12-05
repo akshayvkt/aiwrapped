@@ -1,0 +1,36 @@
+{
+  "name": "claude-wrapped",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "mkdir -p .next/standalone/.next/static && cp -R .next/static/. .next/standalone/.next/static/ && mkdir -p .next/standalone/public && cp -R public/. .next/standalone/public/",
+    "start": "node .next/standalone/server.js",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@vercel/og": "^0.8.5",
+    "date-fns": "^4.1.0",
+    "framer-motion": "^12.23.22",
+    "html-to-image": "^1.11.13",
+    "jszip": "^3.10.1",
+    "lucide-react": "^0.544.0",
+    "mixpanel-browser": "^2.72.0",
+    "next": "15.5.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "recharts": "^3.2.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
