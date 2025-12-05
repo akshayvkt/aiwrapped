@@ -23,11 +23,11 @@ export default function PrivacyPolicy() {
             </p>
 
             <p>
-              <strong className="text-white">We generate your persona using AI</strong> - Session titles and the first 3 messages from a small sample of your conversations are sent to Claude to create your personality summary. This isn&apos;t stored.
+              <strong className="text-white">We store what you see on cards</strong> - Your stats, first message, and latest message are saved so your wrap can be shared. Nothing more.
             </p>
 
             <p>
-              <strong className="text-white">We store what you see on your cards</strong> - Your stats, first message, and latest message are saved so your wrap can be shared. Nothing more.
+              <strong className="text-white">We generate your persona using AI</strong> - Session titles and the first 3 messages from a small sample of your conversations are sent to Claude to create your personality summary. This isn&apos;t stored.
             </p>
 
             <p>
@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
             </p>
 
             <p>
-              <strong className="text-white">You&apos;re in control</strong> - Want your wrap deleted? Email us and it&apos;s gone.
+              <strong className="text-white">You&apos;re in control</strong> - Want your wrap deleted? <a href="mailto:support@dysunlabs.com" className="underline hover:text-white">Email us</a> and it&apos;s gone.
             </p>
           </div>
 
@@ -57,7 +57,7 @@ export default function PrivacyPolicy() {
               <strong className="text-neutral-300">Persona generation:</strong> To create your AI persona, we send session titles and the first 3 messages from a small sample of your conversations (up to 100) to Anthropic&apos;s Claude API. This data is used only to generate your personality summary and is not stored by us or Anthropic.
             </p>
             <p>
-              <strong className="text-neutral-300">Sharing data:</strong> When your wrap is created, we store: your provider (Claude/ChatGPT), aggregate statistics (message counts, dates, streaks), your first and latest message (displayed on your cards), one session title, and your generated persona. This enables the sharing feature.
+              <strong className="text-neutral-300">Sharing data:</strong> When your wrap is created, we store: your provider (Claude/ChatGPT), aggregate statistics (message counts, dates, streaks), your first and latest message (displayed on your cards), one session title, and your generated persona. <strong className="text-neutral-300">This enables the sharing feature.</strong>
             </p>
           </section>
 
