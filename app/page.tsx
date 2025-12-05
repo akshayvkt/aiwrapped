@@ -523,12 +523,12 @@ export default function Home() {
                   </p>
                 </motion.div>
 
-                <p className="text-xs text-[#f8f5f2]/40 text-center mt-1 mb-4">
-                  By uploading, you agree to our{' '}
-                  <a href="/privacy" className="underline hover:text-[#f8f5f2]/60 transition-colors">
-                    Privacy Policy
-                  </a>
-                </p>
+                <div className="flex items-center justify-center gap-2 mt-4 mb-6">
+                  <span className="text-lg">🎁</span>
+                  <p className="text-sm font-medium text-[#f8f5f2]/70">
+                    Join <span className="text-[#ccff00] font-bold">100s</span> who&apos;ve created their Wrapped
+                  </p>
+                </div>
 
                 {needsProviderChoice && (
                   <div className="mb-8 rounded-2xl border border-yellow-500/40 bg-yellow-500/10 px-6 py-5 text-left text-yellow-100">
@@ -595,8 +595,8 @@ export default function Home() {
                   </p>
                 </div>
 
-                {/* OPTION 3: Help link in upload section */}
-                <div className="mt-8 pt-6 border-t border-[#f8f5f2]/10">
+                {/* Help and privacy links */}
+                <div className="mt-8 pt-6 border-t border-[#f8f5f2]/10 flex items-center justify-between">
                   <p className="text-[#f8f5f2]/50 text-sm">
                     Having trouble?{' '}
                     <a
@@ -606,6 +606,12 @@ export default function Home() {
                       Contact us
                     </a>
                   </p>
+                  <a
+                    href="/privacy"
+                    className="text-[#f8f5f2]/40 text-sm hover:text-[#f8f5f2]/60 transition-colors"
+                  >
+                    Privacy Policy
+                  </a>
                 </div>
 
                 </div>
@@ -695,7 +701,7 @@ export default function Home() {
             <div className="flex items-center gap-3">
               <div className="w-2 h-2 bg-[#ccff00] rounded-full animate-pulse" />
               <p className="text-[#f8f5f2]/60 text-sm">
-                Your data stays private. We never store your conversations.
+                Your conversations stay on your device.
               </p>
             </div>
 
