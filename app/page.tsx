@@ -742,7 +742,7 @@ export default function Home() {
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/95 to-[#0a0a0a] backdrop-blur-md border-b border-[#f8f5f2]/10"
       >
-        <div className="max-w-7xl mx-auto px-4 md:px-6 py-2.5 flex items-center justify-start md:justify-center gap-2 md:gap-8 text-xs md:text-sm">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 py-2.5 flex items-center justify-start md:justify-center gap-2 md:gap-8 text-xs md:text-base">
           {/* Desktop: all three */}
           <div className="hidden md:flex items-center gap-1.5">
             <span className="text-[#ccff00]">🔒</span>
