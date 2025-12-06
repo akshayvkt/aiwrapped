@@ -44,3 +44,6 @@ next-env.d.ts
 
 .mcp.json
 .claude
+
+# Logo screenshot (for social media)
+logo-screenshot.html

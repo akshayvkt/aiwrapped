@@ -337,7 +337,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-12 md:py-20 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 pt-16 md:pt-20 pb-12 md:pb-20 relative z-10">
         {/* Provider toggle + Help link - top row */}
         <motion.div
           initial={{ opacity: 0, y: -10 }}
@@ -450,6 +450,7 @@ export default function Home() {
               <span className="inline-block transition-transform duration-200 group-hover:translate-x-2">→</span>
             </motion.a>
           </div>
+
         </motion.div>
 
         {/* Asymmetric editorial grid */}
@@ -720,6 +721,49 @@ export default function Home() {
           </div>
         </motion.div>
       </div>
+
+      {/* Sticky top trust bar */}
+      <motion.div
+        initial={{ y: -50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/95 to-[#0a0a0a] backdrop-blur-md border-b border-[#f8f5f2]/10"
+      >
+        <div className="max-w-7xl mx-auto px-4 md:px-6 py-2.5 flex items-center justify-center gap-3 md:gap-8 text-xs md:text-sm">
+          <div className="flex items-center gap-1.5">
+            <span className="text-[#ccff00]">🔒</span>
+            <span className="text-[#f8f5f2]/80 font-medium">Your file stays on your device</span>
+          </div>
+          <span className="text-[#f8f5f2]/20 hidden sm:inline">•</span>
+          <div className="hidden sm:flex items-center gap-1.5">
+            <span className="text-[#ff006e]">🚫</span>
+            <span className="text-[#f8f5f2]/80 font-medium">Your messages aren&apos;t stored</span>
+          </div>
+          <span className="text-[#f8f5f2]/20 hidden md:inline">•</span>
+          <a
+            href="https://github.com/akshayvkt/aiwrapped"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:flex items-center gap-1.5 group"
+          >
+            <span>👀</span>
+            <span className="text-[#f8f5f2]/80 font-medium group-hover:text-[#ccff00] transition-colors">
+              Don&apos;t trust us? <span className="underline underline-offset-2">Check the code</span>
+            </span>
+          </a>
+          <a
+            href="https://github.com/akshayvkt/aiwrapped"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex sm:hidden items-center gap-1.5 group"
+          >
+            <span>👀</span>
+            <span className="text-[#f8f5f2]/80 font-medium group-hover:text-[#ccff00] transition-colors underline underline-offset-2">
+              Code
+            </span>
+          </a>
+        </div>
+      </motion.div>
 
       {/* Loading sequence overlay */}
       <AnimatePresence>
