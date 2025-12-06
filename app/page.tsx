@@ -540,7 +540,7 @@ export default function Home() {
                 <div className="flex items-center justify-center gap-2 mt-4 mb-6">
                   <span className="text-lg">🎁</span>
                   <p className="text-sm font-medium text-[#f8f5f2]/70">
-                    Join <span className="text-[#ccff00] font-bold">100s</span> who&apos;ve created their Wrapped
+                    Join <span className="text-[#ccff00] font-bold">thousands</span> who&apos;ve discovered their Wrapped
                   </p>
                 </div>
 
