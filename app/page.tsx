@@ -443,11 +443,13 @@ export default function Home() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.8 }}
-              className="group inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#f8f5f2]/10 border border-[#f8f5f2]/20 text-[#f8f5f2] text-base font-medium hover:bg-[#ff006e]/20 hover:border-[#ff006e]/40 transition-all duration-300"
+              className="group relative inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#f8f5f2]/10 border border-[#f8f5f2]/20 text-[#f8f5f2] text-base font-medium hover:bg-[#ff006e]/20 hover:border-[#ff006e]/40 transition-all duration-300 overflow-hidden"
             >
-              <span>✨</span>
-              <span>See an example wrap</span>
-              <span className="inline-block transition-transform duration-200 group-hover:translate-x-2">→</span>
+              {/* Shimmer effect - two elements for continuous loop */}
+              <span className="absolute inset-0 animate-[shimmer_3s_linear_infinite] bg-gradient-to-r from-transparent via-white/15 to-transparent" />
+              <span className="relative">✨</span>
+              <span className="relative">See an example wrap</span>
+              <span className="relative inline-block transition-transform duration-200 group-hover:translate-x-2">→</span>
             </motion.a>
           </div>
 
@@ -475,11 +477,22 @@ export default function Home() {
                 {/* Editorial heading */}
                 <div className="mb-6">
                   <h3 className="font-display text-3xl md:text-4xl font-bold text-[#f8f5f2] mb-3 leading-tight">
-                    Upload your export
+                    Get your Wrapped
                   </h3>
                   <div className="h-1 w-24 bg-[#ccff00] mb-4" />
                   <p className="text-[#a8a29e] text-base">
-                    Already have your ZIP? Drop it below. Need to export first? <a href="#export-instructions" className="text-[#ff006e] hover:text-[#ccff00] underline underline-offset-2 transition-colors">See steps below.</a>
+                    Getting your {assistantLabel} Wrapped is easy.{' '}
+                    <button
+                      type="button"
+                      onClick={() => setShowVideoModal(true)}
+                      className="text-[#ccff00] hover:text-[#ff006e] underline underline-offset-2 transition-colors"
+                    >
+                      Watch the video
+                    </button>
+                    {' '}or{' '}
+                    <a href="#export-instructions" className="text-[#ccff00] hover:text-[#ff006e] underline underline-offset-2 transition-colors">
+                      see steps below
+                    </a>.
                   </p>
                 </div>
 
@@ -556,7 +569,7 @@ export default function Home() {
                 <div id="export-instructions" className="mb-6 scroll-mt-8">
                   <div className="flex items-center gap-3 mb-2 flex-wrap">
                     <h4 className="font-display text-2xl md:text-3xl font-bold text-[#f8f5f2] leading-tight">
-                      How to get your data export
+                      How to get your Wrapped
                     </h4>
                     <button
                       type="button"
@@ -588,11 +601,11 @@ export default function Home() {
                   </p>
                   <p className="flex gap-4 items-start">
                     <span className="font-display text-3xl font-bold text-[#ff006e]">2</span>
-                    <span className="text-[#f8f5f2]/80 text-lg pt-1">Your export will be emailed to you in 5-10 minutes</span>
+                    <span className="text-[#f8f5f2]/80 text-lg pt-1">{assistantLabel} will email your export in 5-10 minutes</span>
                   </p>
                   <p className="flex gap-4 items-start">
                     <span className="font-display text-3xl font-bold text-[#ff006e]">3</span>
-                    <span className="text-[#f8f5f2]/80 text-lg pt-1">Download the file and drop it above</span>
+                    <span className="text-[#f8f5f2]/80 text-lg pt-1">Download the file and upload it here. That&apos;s it - enjoy your Wrapped!</span>
                   </p>
                 </div>
 

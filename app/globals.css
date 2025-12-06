@@ -48,6 +48,16 @@ body {
   opacity: 0.15;
 }
 
+/* Shimmer animation for CTA buttons - continuous loop */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 .story-download-frame {
   width: 1080px;
   height: 1920px;
